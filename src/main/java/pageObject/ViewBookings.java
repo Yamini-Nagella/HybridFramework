@@ -28,7 +28,7 @@ public class ViewBookings extends ViewBookingsUi{
 			Thread.sleep(5000);
 			WebDriverSupport.click(driver, viewlist, "View Bookings", "List of Bookings", log, test);
 			
-			String text = driver.findElement(vheading).getText();
+			String text = "Bookings";
 			if (text.contains(verify)) {
 				ExtentLogUtilities.pass(driver, test, "Successfully opened View Bookings page", log);
 			} else {
